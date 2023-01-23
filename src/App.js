@@ -1,8 +1,8 @@
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
 
 function App() {
-const expenses = [
+  const expenses = [
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -26,23 +26,7 @@ const expenses = [
 
   return (
     <div>
-      <ExpenseItem 
-      name = {expenses[0].title}
-      cost = {expenses[0].amount}
-      date = {expenses[0].date}
-      ></ExpenseItem>
-
-      <ExpenseItem 
-      name = {expenses[1].title}
-      cost = {expenses[1].amount}
-      date = {expenses[1].date}
-      ></ExpenseItem>
-
-      <ExpenseItem 
-      name = {expenses[2].title}
-      cost = {expenses[2].amount}
-      date = {expenses[2].date}
-      ></ExpenseItem>
+      <Expenses expenses = {expenses}></Expenses>
     </div>
 
   );
